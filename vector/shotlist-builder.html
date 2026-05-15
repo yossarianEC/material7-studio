@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vector Shotlist Builder | Material 7</title>
   <link rel="stylesheet" href="/vector/styles/vector.css">
+  <script src="/vector/scripts/theme.js" defer></script>
 </head>
 <body>
   <main class="shell">
@@ -16,17 +17,20 @@
           <small>Shotlist Builder</small>
         </span>
       </a>
-      <nav class="nav">
-        <a href="/vector/">Panel</a>
-        <a href="/shotlist-system/">System</a>
-        <a href="/shotlists/">Published</a>
-      </nav>
+      <div class="top-actions">
+        <nav class="nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/vector/shotlist-builder.html">Builder</a>
+          <a href="/shotlists/">Published</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle>Light mode</button>
+      </div>
     </header>
 
     <section class="page-title compact">
       <p class="eyebrow">Shotlist System V1</p>
-      <h1>Generate blue and green documents from one source.</h1>
-      <p>Edit the campaign JSON, render previews, then download HTML files for <code>/shotlists/</code>.</p>
+      <h1>Five answers in. Briefs and guides out.</h1>
+      <p>Edit the campaign JSON, render previews, then download HTML files for <code>/shotlists/</code>. Bird by bird, without the formatting tax.</p>
     </section>
 
     <section class="builder-grid">
@@ -56,6 +60,18 @@
         <div class="notice" id="status" role="status">Ready.</div>
       </aside>
     </section>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Builder layer</strong>
+        <span>Internal blue first. Client green second. Same source data.</span>
+      </div>
+      <nav class="footer-links" aria-label="Secondary">
+        <a href="/shotlist-system/">System</a>
+        <a href="/shotlist-system/docs/sop.html">SOP</a>
+        <a href="/shotlist-system/data/example-shotlist.json">Example data</a>
+      </nav>
+    </footer>
   </main>
 
   <script src="/shotlist-system/scripts/vector-shotlist-builder.js"></script>

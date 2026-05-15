@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vector Panel | Material 7</title>
   <link rel="stylesheet" href="/vector/styles/vector.css">
+  <script src="/vector/scripts/theme.js" defer></script>
 </head>
 <body>
   <main class="shell">
@@ -16,17 +17,20 @@
           <small>Master panel</small>
         </span>
       </a>
-      <nav class="nav">
-        <a href="/vector/shotlist-builder.html">Builder</a>
-        <a href="/shotlist-system/docs/sop.html">SOP</a>
-        <a href="/shotlists/">Published</a>
-      </nav>
+      <div class="top-actions">
+        <nav class="nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/vector/shotlist-builder.html">Builder</a>
+          <a href="/shotlists/">Published</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle>Light mode</button>
+      </div>
     </header>
 
     <section class="page-title compact">
       <p class="eyebrow">Control Surface</p>
       <h1>Vector Panel</h1>
-      <p>Reusable systems for Material 7 client operations. V1 focuses on the shotlist workflow.</p>
+      <p>Reusable systems for Material 7 client operations. V1 focuses on the script and shotlist layer.</p>
     </section>
 
     <section class="grid cards-2">
@@ -88,6 +92,19 @@
         </tbody>
       </table>
     </section>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Later layers</strong>
+        <span>System docs, template guts, data shapes, and publishing housekeeping stay below the fold.</span>
+      </div>
+      <nav class="footer-links" aria-label="Secondary">
+        <a href="/shotlist-system/">System</a>
+        <a href="/shotlist-system/docs/sop.html">SOP</a>
+        <a href="/shotlist-system/templates/blue.html">Blue template</a>
+        <a href="/shotlist-system/templates/green.html">Green template</a>
+      </nav>
+    </footer>
   </main>
 </body>
 </html>

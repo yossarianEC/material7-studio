@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vector | Material 7</title>
   <link rel="stylesheet" href="/vector/styles/vector.css">
+  <script src="/vector/scripts/theme.js" defer></script>
 </head>
 <body>
   <main class="shell">
@@ -16,29 +17,32 @@
           <small>Material 7 client operations</small>
         </span>
       </a>
-      <nav class="nav">
-        <a href="/vector/">Panel</a>
-        <a href="/vector/shotlist-builder.html">Shotlist Builder</a>
-        <a href="/shotlists/">Published</a>
-      </nav>
+      <div class="top-actions">
+        <nav class="nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/vector/shotlist-builder.html">Builder</a>
+          <a href="/shotlists/">Published</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle>Light mode</button>
+      </div>
     </header>
 
     <section class="page-title">
       <p class="eyebrow">Material 7 Engineering</p>
-      <h1>Vector is the master panel for client-facing systems.</h1>
-      <p>Studio is the publishing surface. Vector is where the reusable operating system lives: templates, generators, SOPs, and clean links for clients.</p>
+      <h1>Vector is the command center for client systems.</h1>
+      <p>This layer is a mini panel for generating briefs, scripts, shotlists, and clean client links without dressing up a word document by hand.</p>
     </section>
 
     <section class="grid cards-3" aria-label="Vector modules">
       <a class="module-card" href="/vector/shotlist-builder.html">
-        <span class="status ready">V1 ready</span>
+        <span class="status ready">Mini panel</span>
         <h2>Shotlist Builder</h2>
-        <p>Generate the blue internal shotlist first, then derive the green client guide from the same structured data.</p>
+        <p>Answer the source fields once, generate the internal shotlist, then derive the client guide from the same data.</p>
       </a>
       <a class="module-card" href="/shotlist-system/">
         <span class="status system">System</span>
         <h2>Template System</h2>
-        <p>Canonical blue and green templates now share one master Material 7 shotlist CSS file.</p>
+        <p>Canonical templates and one master CSS file. Firm, useful, clean enough to ship.</p>
       </a>
       <a class="module-card" href="/shotlists/">
         <span class="status live">Live</span>
@@ -49,16 +53,29 @@
 
     <section class="panel">
       <div>
-        <p class="eyebrow">Current Standard</p>
-        <h2>One source of truth, two outputs.</h2>
+        <p class="eyebrow">Design Standard</p>
+        <h2>Fast, iterative, quality-conscious.</h2>
       </div>
       <div class="workflow">
-        <div><strong>1</strong><span>Capture campaign data</span></div>
-        <div><strong>2</strong><span>Render blue internal control doc</span></div>
-        <div><strong>3</strong><span>Render green client/talent guide</span></div>
-        <div><strong>4</strong><span>Publish clean URLs in /shotlists</span></div>
+        <div><strong>1</strong><span>Firmitas: stable system bones</span></div>
+        <div><strong>2</strong><span>Utilitas: five answers become a brief</span></div>
+        <div><strong>3</strong><span>Venustas: full color, low embarrassment</span></div>
+        <div><strong>4</strong><span>Bird by bird: ship the next usable layer</span></div>
       </div>
     </section>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Vector V1</strong>
+        <span>Apple x Nintendo restraint for Material 7 operations.</span>
+      </div>
+      <nav class="footer-links" aria-label="Secondary">
+        <a href="/vector/">Panel</a>
+        <a href="/shotlist-system/">System</a>
+        <a href="/shotlist-system/docs/sop.html">SOP</a>
+        <a href="/shotlist-system/data/example-shotlist.json">Example data</a>
+      </nav>
+    </footer>
   </main>
 </body>
 </html>

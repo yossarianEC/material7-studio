@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vector Shotlist System | Material 7</title>
   <link rel="stylesheet" href="/vector/styles/vector.css">
+  <script src="/vector/scripts/theme.js" defer></script>
 </head>
 <body>
   <main class="shell">
@@ -16,11 +17,14 @@
           <small>Shotlist System</small>
         </span>
       </a>
-      <nav class="nav">
-        <a href="/vector/">Panel</a>
-        <a href="/vector/shotlist-builder.html">Builder</a>
-        <a href="/shotlists/">Published</a>
-      </nav>
+      <div class="top-actions">
+        <nav class="nav" aria-label="Primary">
+          <a href="/">Home</a>
+          <a href="/vector/shotlist-builder.html">Builder</a>
+          <a href="/shotlists/">Published</a>
+        </nav>
+        <button class="theme-toggle" type="button" data-theme-toggle>Light mode</button>
+      </div>
     </header>
 
     <section class="page-title compact">
@@ -46,6 +50,18 @@
         <p>Structured campaign data used by the Vector Shotlist Builder.</p>
       </a>
     </section>
+
+    <footer class="site-footer">
+      <div>
+        <strong>System shelf</strong>
+        <span>The guts live here so the top menu stays operator-simple.</span>
+      </div>
+      <nav class="footer-links" aria-label="Secondary">
+        <a href="/shotlist-system/docs/sop.html">SOP</a>
+        <a href="/shotlist-system/styles/material7-shotlist.css">Master CSS</a>
+        <a href="/shotlist-system/data/example-shotlist.json">Example data</a>
+      </nav>
+    </footer>
   </main>
 </body>
 </html>
