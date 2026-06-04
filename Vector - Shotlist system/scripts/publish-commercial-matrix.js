@@ -16,9 +16,68 @@ const TEMPLATE_PATH = path.join(
 
 const OUTPUT_ROOT = path.join(process.cwd(), "shotlists");
 
-// TinyCommand can occasionally pass Spanish copy with accent marks stripped before it reaches GitHub.
-// Slugs may stay ASCII, but visible commercial copy must keep Spanish accents whenever we can safely restore them.
+// TinyCommand may strip accented vowels entirely before the JSON reaches GitHub.
+// Example: campaña -> campaa, instalación -> instalacin, más -> ms.
+// Slugs stay ASCII, but visible commercial copy should repair common Spanish words.
 const COMMON_SPANISH_ACCENT_REPAIRS = {
+  // Missing-letter forms caused by stripped accented vowels / ñ.
+  campaa: "campaña",
+  campaas: "campañas",
+  instalacin: "instalación",
+  cotizacin: "cotización",
+  revisin: "revisión",
+  solucin: "solución",
+  inversin: "inversión",
+  opcin: "opción",
+  opciones: "opciones",
+  prctico: "práctico",
+  prctica: "práctica",
+  vehculo: "vehículo",
+  vehculos: "vehículos",
+  gua: "guía",
+  guas: "guías",
+  ms: "más",
+  dao: "daño",
+  daos: "daños",
+  aos: "años",
+  ao: "año",
+  escribenos: "escríbenos",
+  escrbenos: "escríbenos",
+  electrnica: "electrónica",
+  tcnico: "técnico",
+  tcnica: "técnica",
+  pgina: "página",
+  pginas: "páginas",
+  informacin: "información",
+  descripcin: "descripción",
+  produccin: "producción",
+  comunicacin: "comunicación",
+  promocin: "promoción",
+  atencin: "atención",
+  confirmacin: "confirmación",
+  automatizacin: "automatización",
+  catlogo: "catálogo",
+  catlogos: "catálogos",
+  cdigo: "código",
+  cdigos: "códigos",
+  tambin: "también",
+  pas: "país",
+  mvil: "móvil",
+  rpido: "rápido",
+  rpida: "rápida",
+  bsico: "básico",
+  bsica: "básica",
+  botn: "botón",
+  cmara: "cámara",
+  mecnico: "mecánico",
+  pblico: "público",
+  pblica: "pública",
+  crdito: "crédito",
+  versin: "versión",
+  edicin: "edición",
+  diseo: "diseño",
+
+  // Plain ASCII forms that should be accented in normal Spanish commercial copy.
   aereo: "aéreo",
   alicuota: "alícuota",
   alicuotas: "alícuotas",
@@ -52,7 +111,6 @@ const COMMON_SPANISH_ACCENT_REPAIRS = {
   edicion: "edición",
   electrico: "eléctrico",
   electronica: "electrónica",
-  escribenos: "escríbenos",
   guia: "guía",
   guias: "guías",
   instalacion: "instalación",
@@ -62,7 +120,6 @@ const COMMON_SPANISH_ACCENT_REPAIRS = {
   mecanico: "mecánico",
   movil: "móvil",
   opcion: "opción",
-  opciones: "opciones",
   pagina: "página",
   paginas: "páginas",
   pais: "país",
@@ -110,7 +167,11 @@ function applyOriginalCase(source, replacement) {
 function restoreCommonSpanishAccents(value) {
   let text = normalizeText(value);
 
-  for (const [plainWord, accentedWord] of Object.entries(COMMON_SPANISH_ACCENT_REPAIRS)) {
+  const repairEntries = Object.entries(COMMON_SPANISH_ACCENT_REPAIRS).sort(
+    ([a], [b]) => b.length - a.length
+  );
+
+  for (const [plainWord, accentedWord] of repairEntries) {
     const pattern = new RegExp(`\\b${plainWord}\\b`, "gi");
     text = text.replace(pattern, (match) => applyOriginalCase(match, accentedWord));
   }
