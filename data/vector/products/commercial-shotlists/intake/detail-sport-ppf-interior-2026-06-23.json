@@ -1,0 +1,56 @@
+{
+  "client_name": "Detail Sport",
+  "campaign_topic": "PPF Interior",
+  "project_name": "Campaña de instalación de PPF interior",
+  "date": "2026-06-23",
+  "audience_label": "Hombres",
+  "audience_age_range": "25–65",
+  "summary": "Instalación profesional de PPF interior para proteger detalles, acabados y zonas de contacto del vehículo.",
+  "recording_instructions": "Hable despacio y con pausas. Deje un segundo de silencio antes y después de cada frase para facilitar los cortes en edición.",
+  "aperturas": [
+    {
+      "label": "Autoridad",
+      "text": "En Detail Sport, contamos con amplia experiencia en instalación profesional de PPF interior."
+    },
+    {
+      "label": "Precisión",
+      "text": "La protección del interior de su vehículo requiere experiencia, precisión y una instalación profesional."
+    },
+    {
+      "label": "Cuidado",
+      "text": "En Detail Sport, instalamos PPF interior con precisión y cuidado en cada detalle."
+    }
+  ],
+  "beneficios": [
+    {
+      "label": "Corte a medida",
+      "text": "Cortamos cada pieza a medida con software CarPro para que calce con precisión en cada zona interior."
+    },
+    {
+      "label": "Protección transparente",
+      "text": "Instalamos PPF transparente en pantallas, consolas, molduras y puntos de contacto sin cambiar el acabado original."
+    },
+    {
+      "label": "Trabajo cuidadoso",
+      "text": "Nuestros técnicos trabajan cuidadosamente, pieza por pieza, para proteger los detalles más expuestos del interior."
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Cotización",
+      "text": "Contáctenos para cotizar su instalación de PPF interior."
+    },
+    {
+      "label": "WhatsApp",
+      "text": "Escríbanos y proteja el interior de su vehículo con PPF."
+    },
+    {
+      "label": "Asesoría",
+      "text": "Agende una asesoría gratuita para revisar su cotización de PPF interior."
+    }
+  ],
+  "visual_notes": [],
+  "audio_notes": [],
+  "internal_notes": [],
+  "client_notes": []
+}

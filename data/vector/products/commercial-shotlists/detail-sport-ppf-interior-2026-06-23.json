@@ -1,0 +1,67 @@
+{
+  "id": "detail-sport-ppf-interior-2026-06-23",
+  "client": "Detail Sport",
+  "project": "Campaña de instalación de PPF interior",
+  "date": "2026-06-23",
+  "audience": {
+    "label": "Hombres",
+    "age_range": "25–65"
+  },
+  "summary": "Instalación profesional de PPF interior para proteger detalles, acabados y zonas de contacto del vehículo.",
+  "recording_instructions": "Hable despacio y con pausas. Deje un segundo de silencio antes y después de cada frase para facilitar los cortes en edición.",
+  "aperturas": [
+    {
+      "id": "apertura-01",
+      "text": "En Detail Sport, contamos con amplia experiencia en instalación profesional de PPF interior.",
+      "label": "Autoridad"
+    },
+    {
+      "id": "apertura-02",
+      "text": "La protección del interior de su vehículo requiere experiencia, precisión y una instalación profesional.",
+      "label": "Precisión"
+    },
+    {
+      "id": "apertura-03",
+      "text": "En Detail Sport, instalamos PPF interior con precisión y cuidado en cada detalle.",
+      "label": "Cuidado"
+    }
+  ],
+  "beneficios": [
+    {
+      "id": "beneficio-01",
+      "text": "Cortamos cada pieza a medida con software CarPro para que calce con precisión en cada zona interior.",
+      "label": "Corte a medida"
+    },
+    {
+      "id": "beneficio-02",
+      "text": "Instalamos PPF transparente en pantallas, consolas, molduras y puntos de contacto sin cambiar el acabado original.",
+      "label": "Protección transparente"
+    },
+    {
+      "id": "beneficio-03",
+      "text": "Nuestros técnicos trabajan cuidadosamente, pieza por pieza, para proteger los detalles más expuestos del interior.",
+      "label": "Trabajo cuidadoso"
+    }
+  ],
+  "ctas": [
+    {
+      "id": "cta-01",
+      "text": "Contáctenos para cotizar su instalación de PPF interior.",
+      "label": "Cotización"
+    },
+    {
+      "id": "cta-02",
+      "text": "Escríbanos y proteja el interior de su vehículo con PPF.",
+      "label": "WhatsApp"
+    },
+    {
+      "id": "cta-03",
+      "text": "Agende una asesoría gratuita para revisar su cotización de PPF interior.",
+      "label": "Asesoría"
+    }
+  ],
+  "visual_notes": [],
+  "audio_notes": [],
+  "internal_notes": [],
+  "client_notes": []
+}

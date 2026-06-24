@@ -1,0 +1,69 @@
+{
+  "id": "detail-sport-ppf-immortal-cut-2026-06-11",
+  "client": "Detail Sport",
+  "project": "Campaña de instalación de PPF con sistema Immortal Cut de CarPro",
+  "date": "2026-06-11",
+  "audience": {
+    "label": "Hombres",
+    "age_range": "25–65"
+  },
+  "summary": "Instalación profesional de PPF para proteger pintura, bordes, interiores y zonas de contacto del vehículo.",
+  "recording_instructions": "Hable despacio y con pausas. Deje un segundo de silencio antes y después de cada frase para facilitar los cortes en edición.",
+  "aperturas": [
+    {
+      "id": "apertura-01",
+      "text": "¿Quiere proteger la pintura de su vehículo antes de que se desgaste?",
+      "label": "Pregunta"
+    },
+    {
+      "id": "apertura-02",
+      "text": "Su vehículo está expuesto todos los días a rayones, piedras, marcas y desgaste.",
+      "label": "Exposición diaria"
+    },
+    {
+      "id": "apertura-03",
+      "text": "El PPF protege las zonas más vulnerables de su auto sin cambiar su estilo original.",
+      "label": "Protección invisible"
+    }
+  ],
+  "beneficios": [
+    {
+      "id": "beneficio-01",
+      "text": "El PPF ayuda a proteger la pintura del desgaste diario y los rayones.",
+      "label": "Rayones"
+    },
+    {
+      "id": "beneficio-02",
+      "text": "La instalación de PPF actúa como una barrera protectora, protegiendo a su auto de los elementos.",
+      "label": "Barrera protectora"
+    },
+    {
+      "id": "beneficio-03",
+      "text": "El PPF le ayuda a mantener su auto en perfectas condiciones y además protege su valor de reventa.",
+      "label": "Valor de reventa"
+    }
+  ],
+  "ctas": [
+    {
+      "id": "cta-01",
+      "text": "Contáctenos para solicitar su cotización.",
+      "label": "Cotización"
+    },
+    {
+      "id": "cta-02",
+      "text": "Proteja su vehículo con PPF profesional. Escríbanos y agende su asesoría.",
+      "label": "Asesoría"
+    },
+    {
+      "id": "cta-03",
+      "text": "Contáctenos para más información sobre nuestro servicio de PPF con garantía.",
+      "label": "Garantía"
+    }
+  ],
+  "visual_notes": [],
+  "audio_notes": [],
+  "internal_notes": [
+    "This content came from the old file named detail-sport-campana-pulido-y-proteccion-ceramica-con-productos-carpro-2026-06-08-1133.html, but the actual campaign content is PPF, not ceramic coating."
+  ],
+  "client_notes": []
+}
