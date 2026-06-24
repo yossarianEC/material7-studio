@@ -1,0 +1,67 @@
+{
+  "id": "client-campaign-topic-yyyy-mm-dd",
+  "client": "Client Name",
+  "project": "Project Name",
+  "date": "2026-01-01",
+  "audience": {
+    "label": "Audience label",
+    "age_range": "25–65"
+  },
+  "summary": "Short summary of the campaign or shotlist.",
+  "recording_instructions": "Hable despacio y con pausas. Deje un segundo de silencio antes y después de cada frase para facilitar los cortes en edición.",
+  "aperturas": [
+    {
+      "id": "apertura-01",
+      "label": "Opening angle",
+      "text": "Opening copy goes here."
+    },
+    {
+      "id": "apertura-02",
+      "label": "Opening angle",
+      "text": "Opening copy goes here."
+    },
+    {
+      "id": "apertura-03",
+      "label": "Opening angle",
+      "text": "Opening copy goes here."
+    }
+  ],
+  "beneficios": [
+    {
+      "id": "beneficio-01",
+      "label": "Benefit angle",
+      "text": "Benefit copy goes here."
+    },
+    {
+      "id": "beneficio-02",
+      "label": "Benefit angle",
+      "text": "Benefit copy goes here."
+    },
+    {
+      "id": "beneficio-03",
+      "label": "Benefit angle",
+      "text": "Benefit copy goes here."
+    }
+  ],
+  "ctas": [
+    {
+      "id": "cta-01",
+      "label": "CTA angle",
+      "text": "CTA copy goes here."
+    },
+    {
+      "id": "cta-02",
+      "label": "CTA angle",
+      "text": "CTA copy goes here."
+    },
+    {
+      "id": "cta-03",
+      "label": "CTA angle",
+      "text": "CTA copy goes here."
+    }
+  ],
+  "visual_notes": [],
+  "audio_notes": [],
+  "internal_notes": [],
+  "client_notes": []
+}
