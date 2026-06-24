@@ -1,0 +1,67 @@
+{
+  "id": "example-commercial-shotlist-2026-01-01",
+  "client": "Example Client",
+  "project": "Example Commercial Campaign",
+  "date": "2026-01-01",
+  "audience": {
+    "label": "General audience",
+    "age_range": "25–65"
+  },
+  "summary": "Example structured commercial shotlist data for the Vector Commercial Shotlist System.",
+  "recording_instructions": "Hable despacio y con pausas. Deje un segundo de silencio antes y después de cada frase para facilitar los cortes en edición.",
+  "aperturas": [
+    {
+      "id": "apertura-01",
+      "label": "Authority opening",
+      "text": "En Example Client, ayudamos a proteger lo que más importa con un proceso profesional."
+    },
+    {
+      "id": "apertura-02",
+      "label": "Problem opening",
+      "text": "Cada detalle cuenta cuando quiere mantener una presentación impecable."
+    },
+    {
+      "id": "apertura-03",
+      "label": "Direct opening",
+      "text": "Conozca una forma más clara y profesional de cuidar su inversión."
+    }
+  ],
+  "beneficios": [
+    {
+      "id": "beneficio-01",
+      "label": "Precision",
+      "text": "Nuestro proceso ayuda a lograr un resultado más preciso, limpio y consistente."
+    },
+    {
+      "id": "beneficio-02",
+      "label": "Care",
+      "text": "Trabajamos cada detalle con cuidado para proteger el acabado original."
+    },
+    {
+      "id": "beneficio-03",
+      "label": "Confidence",
+      "text": "Reciba una solución profesional pensada para durar y verse bien."
+    }
+  ],
+  "ctas": [
+    {
+      "id": "cta-01",
+      "label": "Quote",
+      "text": "Contáctenos para solicitar su cotización."
+    },
+    {
+      "id": "cta-02",
+      "label": "Appointment",
+      "text": "Escríbanos y agende su asesoría."
+    },
+    {
+      "id": "cta-03",
+      "label": "Information",
+      "text": "Contáctenos para más información sobre este servicio."
+    }
+  ],
+  "visual_notes": [],
+  "audio_notes": [],
+  "internal_notes": [],
+  "client_notes": []
+}

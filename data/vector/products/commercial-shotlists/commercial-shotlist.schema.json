@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Commercial Shotlist",
+  "type": "object",
+  "required": [
+    "id",
+    "client",
+    "project",
+    "date",
+    "audience",
+    "recording_instructions",
+    "aperturas",
+    "beneficios",
+    "ctas"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Lowercase kebab-case identifier. Example: detail-sport-ppf-interior-2026-06-23"
+    },
+    "client": {
+      "type": "string"
+    },
+    "project": {
+      "type": "string"
+    },
+    "date": {
+      "type": "string",
+      "format": "date"
+    },
+    "audience": {
+      "type": "object",
+      "required": ["label"],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "age_range": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "summary": {
+      "type": "string"
+    },
+    "recording_instructions": {
+      "type": "string"
+    },
+    "aperturas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/copyBlock"
+      }
+    },
+    "beneficios": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/copyBlock"
+      }
+    },
+    "ctas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/copyBlock"
+      }
+    },
+    "visual_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "audio_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "internal_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "client_notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "copyBlock": {
+      "type": "object",
+      "required": ["id", "text"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "label": {
+          "type": "string"
+        },
+        "text": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
