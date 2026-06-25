@@ -358,13 +358,11 @@ def render_index(shotlists: list[dict[str, object]]) -> str:
     cards: list[str] = []
     for shotlist in shotlists:
         audience = audience_text(shotlist)
-        summary = shotlist.get("summary") if isinstance(shotlist.get("summary"), str) else ""
         cards.append(
             f'''<article class="guide-card"><div class="guide-card__accent"></div><div class="guide-card__body">
               <p class="client-name">{escape_html(shotlist["client"])}</p>
               <h2>{escape_html(shotlist["project"])}</h2>
               <div class="guide-meta"><time datetime="{escape_html(shotlist["date"])}">{escape_html(shotlist["date"])}</time>{f'<span>{escape_html(audience)}</span>' if audience else ''}</div>
-              {f'<p class="summary">{escape_html(summary)}</p>' if summary else ''}
               <a class="guide-link" href="./{escape_html(shotlist["public_slug"])}/">Abrir guía</a>
             </div></article>'''
         )
